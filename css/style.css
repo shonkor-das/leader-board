@@ -8,12 +8,14 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #ffffff;
     width: 870px;
     padding: 35px;
+    margin-top: 20px;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -25,8 +27,8 @@ hr{
 }
 .section-title{
     color: #562EFF;
-    font-size: 24px;
-    margin-top: 3px;
+    font-size: 22px;
+    margin-top: -10px;
 }
 .players{
     display: grid;
@@ -71,7 +73,6 @@ hr{
     width: 80%;
     margin: 3px 0;
 }
-}
 .blog-author{
     color: #9F9F9F;
     font-size: 16px;
@@ -80,4 +81,81 @@ hr{
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
+}
+
+/* latest courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    width: 230px;
+    height: auto;
+}
+.course-banner img{
+    width: 220px;
+    height: 104px;
+    margin-bottom: -15px;
+}
+.course-title{
+    color: #1E1E1E;
+    font-size: 18px;
+}
+.course-author{
+    color: #EF8470;
+    font-size: 14px;
+    margin-top: -15px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-info .fa-star{
+    font-size: 14px;
+}
+.course-info .filed{
+    color: #FFC014;
+}
+.course-info .empty{
+    color: #E1E1E1;
+}
+.course-info span{
+    font-size: 14px;
+}
+.course-duration{
+    background-color: #FEE5DF;
+    color: #FF8995;
+    padding-right: 7px;
+    font-size: 15px;
+    border-radius: 50px;
+}
+.course-duration .fa-clock{
+    padding: 5px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blogs{
+        flex-direction: column;
+    }
+}
+/* Tablet Devices */
+@media only screen and (max-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
