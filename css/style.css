@@ -21,6 +21,44 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 27px;
 }
+/* header styles */
+.header{
+    background-color: #562EFF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 35px;
+    height: 35px;
+    padding-top: 15px;
+    margin-left: 190px;
+}
+.idea{
+    padding-left: 23px;
+    font-size: 20px;
+}
+.header-details{
+    display: flex;
+    margin-right: 190px;
+}
+.header-details li{
+    list-style: none;
+    float: left;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.header-profile img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+    padding-top: 10px;
+}
 /* top players style */
 .top-players{
     margin-bottom: 30px;
@@ -92,11 +130,18 @@ hr{
 .course{
     width: 230px;
     height: auto;
+    box-shadow: 5px 5px 10px 10px  #FDFDFD;
+    box-sizing: border-box;
+    
 }
 .course-banner img{
     width: 220px;
     height: 104px;
     margin-bottom: -15px;
+    padding: 5px;
+}
+.course-details{
+    padding: 5px;
 }
 .course-title{
     color: #1E1E1E;
@@ -111,6 +156,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
 }
 .course-info .fa-star{
     font-size: 14px;
